@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ue
+
 LAMBDA_ARCH="linux/amd64"
 RUST_TARGET="x86_64-unknown-linux-gnu"
 RUST_VERSION="1.57.0"
