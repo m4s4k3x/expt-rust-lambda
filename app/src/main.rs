@@ -1,11 +1,11 @@
 use lambda_runtime::{handler_fn, Context, Error};
 use serde_json::{json, Value};
 
-// エントリポイント
 #[tokio::main]
 async fn main() -> Result<(), Error> {
     let func = handler_fn(my_handler);
     lambda_runtime::run(func).await?;
+
     Ok(())
 }
 
